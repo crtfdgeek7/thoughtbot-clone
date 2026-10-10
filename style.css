@@ -1,0 +1,113 @@
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #201313;
+}
+.nav-bar {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 12px 0px;
+    /* background-color: #201313; */
+    margin: 0 50px;
+}
+.nav-bar a {
+    color: #EAE6E4;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 14.85px;
+    font-family: "JetBrains Mono", monospace;
+    text-decoration: none;
+}
+.nav-bar a:hover {
+    color: #fec726;
+    text-decoration: underline;
+}
+.left {
+    /* border: 2px solid red; */
+    margin: 0;
+}
+.middle {
+    /* border: 2px solid red; */
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.middle a:last-child {
+    color: #fec726;
+}
+.right{
+    /* border: 2px solid red; */
+    text-align: center;
+    display: flex;
+    background-color: #ed3033;
+    border: none;
+    /* margin-top: 10px; */
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #EAE6E4;
+}
+
+
+
+
+
+
+
+.signup {
+    background-color: #2d1b1b;
+    color: white;
+    padding: 28px 38px 30px;
+    max-width: 780px;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    line-height: 1.15;
+    margin: 0 0 28px;
+}
+
+form {
+    display: flex;
+    align-items: end;
+    gap: 12px;
+}
+
+input {
+    flex: 1;
+    background: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 12px;
+    font-size: 18px;
+}
+
+input::placeholder {
+    color: white;
+}
+
+button {
+    background-color: #ed3033;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 16px 34px;
+    font-size: 16px;
+    font-weight: bold;
+}
