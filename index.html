@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
         <div class="nav-bar">
@@ -13,10 +15,10 @@
                 <img src="images/navIcon.png" alt="">
             </div>
             <div class="middle">
-                <a href="#">Services</a>
-                <a href="#">Industries</a>
+                <a href="#">Services⌄</a>
+                <a href="#">Industries⌄</a>
                 <a href="#">Case Studies</a>
-                <a href="#">Resources</a>
+                <a href="#">Resources⌄</a>
                 <a href="#">Blog</a>
             </div>
             <div class="right">
@@ -28,7 +30,7 @@
         <div class="header">
             <h1>Giant Robots Smashing Into Other<br>Giant Robots</h1>
             <p>Written by <a href="#">thoughtbot</a>, your expert partner for design and development.</p>
-        </div>    
+        </div>
         <hr>
         <div class="buttons">
             <a href="#">All Topics</a>
@@ -39,18 +41,28 @@
         </div>
         <div class="topics">
             <a href="#">What causes AI fatigue for engineers and how to ease the strain</a>
-            <p>AI fatigue is setting in for engineering teams. Our research shows most feel pressure to assess every AI trend, struggle to evaluate tools, and wrestle with evaluating AI-generated code. Here’s some practical advice for navigating the pain points.</p>
-            <p><a href="#">Richard Newman</a> and <a href="#">Michelle Taute</a> <time datetime="2026-10-6">-October 6, 2026</time></p>
+            <p>AI fatigue is setting in for engineering teams. Our research shows most feel pressure to assess every AI
+                trend, struggle to evaluate tools, and wrestle with evaluating AI-generated code. Here’s some practical
+                advice for navigating the pain points.</p>
+            <p><a href="#">Richard Newman</a> and <a href="#">Michelle Taute</a> <time datetime="2026-10-6">-October 6,
+                    2026</time></p>
             <p>DEVELOPMENT, AI</p>
         </div>
         <div class="signup">
             <h2>Sign up to receive a weekly recap<br>from thoughtbot</h2>
-            <form action="#" method="#">
-                <label for="name">Your email address</label>
-                <input type="email"name="email"placeholder=""required>
+            <form action="#" method="post">
+                <label for="email">Your email address</label>
+                <div class="form-row">
+                    <input id="email" type="email" name="email" required>
+                    <button type="submit">Subscribe</button>
+                </div>
             </form>
-                <button type="submit">Subscribe</button>
+        </div>
+        <div class="feeds">
+            <p>Looking for even more ways to stay connected?</p>
+            <a href="#"><img src="images/wifi.svg" alt="">Check out our feeds <img src="images/arrowright.svg" alt=""></a>
         </div>
     </div>
 </body>
+
 </html>
