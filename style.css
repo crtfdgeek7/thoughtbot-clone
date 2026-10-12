@@ -325,10 +325,51 @@ button {
     color: #ffc726;
     text-decoration: none;
 }
+
 .pager-hr {
     border: 1px solid #2F1C1C;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     width: 100%;
 }
 
+footer {
+    /* border: 2px solid red; */
+    /* margin: 0 20px; */
+    height: 400px;
+}
+.top-section {
+    display: flex;
+    justify-content: space-around;
+}
+.left-top {
+    /* border: 2px solid red; */
+    margin-left: -260px;
+    margin-top: 20px;
+}
+
+.right-top  {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    width: 600px;
+    justify-content: space-between;
+}
+.section {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+.section a {
+    /* border: 2px solid red; */
+    color: #EAE6E4;
+    text-decoration: dashed underline;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px;
+}
+.section a:hover {
+    color: #ffc726;
+    text-decoration: none;
+}
 
