@@ -12,6 +12,10 @@ body {
 }
 nav {
     width: 100%;
+    position: fixed;
+    /* height: 80px; */
+    left: 0;
+    right: 0;
 }
 .nav-bar {
     /* border: 2px solid red; */
@@ -19,7 +23,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     padding: 5px 12px 0px;
-    /* background-color: #201313; */
+    background-color: #201313;
     margin: 0 50px;
     font-family: "JetBrains Mono", monospace;
 }
@@ -64,9 +68,10 @@ nav {
     color: #eae6e4;
     /* border: 2px solid #e03131; */
 }
+
 .content {
     width: 852px;
-    margin: 10px auto 0;
+    margin: 0 auto 0;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -76,7 +81,7 @@ nav {
 .header h1 {
     /* border: 2px solid red; */
     width: auto;
-    margin: 0 0 12px;
+    margin: 200px 0 12px;
     font-size: 48px;
     line-height: 1.1;
     font-weight: 700;
@@ -95,12 +100,14 @@ nav {
     color: #FFC726;
     text-decoration: none;
 }
+
 hr {
     width: 100%;
     margin: 0;
     border: 0;
     border-top: 2px solid #716058;
 }
+
 .buttons {
     /* border: 2px solid red; */
     /* margin: 20px 0; */
@@ -147,23 +154,25 @@ hr {
     color: #FFC726;
     text-decoration: none;
 }
+
 .topics  {
     /* border: 2px solid red; */
     width: 100%;
     margin-top: 44px;
 }
-.topics a:nth-child(1) {
+.topics h2 a {
     color: #EAE6E4;
     text-decoration: none;
     font-weight: 700;
-    /* display: block; */
+    display: block;
     font-size: 30px;
     line-height: 1.12;
     max-width: 800px;
 }
-.topics a:nth-child(1):hover {
+.topics h2 a:hover {
     color: #fec726;
     text-decoration: none;
+    /* border: 2px solid red; */
 }
 .topics p {
     color: #EAE6E4;
@@ -183,15 +192,16 @@ hr {
     text-decoration: none;
     color: #fec726;
 }
-.topics p:last-child {
+.topics-links a {
     /* border: 2px solid red; */
-    letter-spacing: 1px;
+    color: #EAE6E4;
+    text-decoration: none;
+    font-size: 14.85px;
     font-weight: 700;
-    margin-top: 10px;
-    font-size: 14px;
 }
-
-
+.topics-links a:hover {
+    color: #FFC726;
+}
 
 .signup {
     width: 100%;
@@ -199,17 +209,14 @@ hr {
     padding: 25px 34px 34px;
     background: #2f1c1c;
 }
-
 .signup h2 {
     margin: 0 0 24px;
     font-size: 34px;
     line-height: 1.25;
 }
-
 form {
     display: block;
 }
-
 label {
     display: block;
     margin: 0 0 8px;
@@ -217,13 +224,11 @@ label {
     font-family: "JetBrains Mono", monospace;
     font-size: 16px;
 }
-
 .form-row {
     display: flex;
     align-items: end;
     gap: 12px;
 }
-
 input {
     flex: 1;
     min-width: 0;
@@ -234,7 +239,9 @@ input {
     color: #eae6e4;
     font-size: 18px;
 }
-
+input:hover {
+    border-bottom: 1px solid #EAE6E4;
+}
 button {
     flex: 0 0 auto;
     margin: 0;
@@ -246,6 +253,7 @@ button {
     font-weight: 700;
     border: none;
 }
+
 .feeds {
     display: flex;
     /* border: 2px solid red; */
@@ -259,6 +267,7 @@ button {
     font-weight: 400;
     color: #eae6e4;
     padding: 15px 0;
+    margin-left: 50px;
 }
 .feeds img {
     /* border: 2px solid red; */
@@ -287,5 +296,11 @@ button {
 }
 .feeds a:hover {
     color: #fec726;
-    text-decoration: underline;
+    text-decoration: dashed underline;
 }
+
+/* hr */
+.edit {
+    border: 1px solid #2F1C1C;
+}
+
